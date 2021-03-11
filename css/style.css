@@ -1,0 +1,435 @@
+/* Подключение шрифтов --------------------------------------------*/
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-SemiBold.woff2") format("woff2"), url("../fonts/Gilroy-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+/* /Подключение шрифтов -----------------------------------------*/
+
+/* Обнуляющий стиль ---------------------------------------------*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+ol li,
+ul li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+	font-family: Gilroy;
+}
+/* /Обнуляющий стиль---------------------------------------------*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* --------------------------------------------------------------*/
+.block1 {
+	background: rgba(122, 120, 120, 0.794);
+	z-index: 0;
+	height: 790px;
+
+	border-bottom: 25px dashed #000;
+}
+.block2 {
+	background: url(../img/depositphotos_10213700-stock-photo-beautiful-forest-landscape.jpg) no-repeat;
+	background-size: cover;
+	border-bottom: 15px solid rgb(70, 69, 69);
+}
+.car {
+	padding: 25% 0px 0px 25%;
+}
+.car-top {
+	border: 1px solid #000;
+	border-radius: 350px 400px 0 0;
+	width: 400px;
+	height: 80px;
+	position: relative;
+	top: 0;
+	left: 80px;
+	background: linear-gradient(
+		135deg,
+		rgba(240, 183, 161, 1) 0%,
+		rgba(117, 34, 1, 1) 46%,
+		rgba(117, 34, 1, 1) 57%,
+		rgba(191, 110, 78, 1) 100%
+	);
+}
+.car-top__window_f {
+	border: 1px solid #000;
+	border-radius: 0 390px 0 0;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background: linear-gradient(
+		135deg,
+		rgba(30, 87, 153, 1) 0%,
+		rgba(41, 137, 216, 1) 35%,
+		rgba(32, 124, 202, 1) 55%,
+		rgba(32, 124, 202, 1) 72%,
+		rgba(125, 185, 232, 1) 100%
+	);
+}
+.car-top__window_l {
+	border: 1px solid #000;
+	border-radius: 290px 0 0 0;
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	background: linear-gradient(
+		135deg,
+		rgba(30, 87, 153, 1) 0%,
+		rgba(32, 124, 202, 1) 22%,
+		rgba(32, 124, 202, 1) 34%,
+		rgba(41, 137, 216, 1) 49%,
+		rgba(32, 124, 202, 1) 68%,
+		rgba(32, 124, 202, 1) 86%,
+		rgba(125, 185, 232, 1) 100%
+	);
+}
+.car-bottom {
+	border: 1px solid #000;
+	border-radius: 30px 300px 40px 10px;
+	width: 700px;
+	height: 150px;
+	position: relative;
+
+	background: linear-gradient(
+		135deg,
+		rgba(240, 183, 161, 1) 0%,
+		rgba(117, 34, 1, 1) 46%,
+		rgba(117, 34, 1, 1) 57%,
+		rgba(191, 110, 78, 1) 100%
+	);
+}
+.car-bottom::after {
+	content: "";
+	position: absolute;
+	right: 275px;
+	top: -30px;
+	width: 40px;
+	height: 25px;
+	border-radius: 5px;
+	background-color: rgb(36, 36, 36);
+}
+.car-bottom::before {
+	content: "";
+	position: absolute;
+	left: -25px;
+	top: 130px;
+	width: 25px;
+	height: 15px;
+	background-color: rgb(177, 177, 177);
+}
+.car-bottom__door_f {
+	border: 1px solid #000;
+	border-radius: 5px 5px 5px 5px;
+
+	width: 115px;
+	height: 210px;
+	position: absolute;
+	right: 300px;
+	top: -75px;
+	background: linear-gradient(
+		135deg,
+		rgba(240, 183, 161, 1) 0%,
+		rgba(117, 34, 1, 1) 46%,
+		rgba(117, 34, 1, 1) 57%,
+		rgba(191, 110, 78, 1) 100%
+	);
+}
+.car-bottom__door_f::before {
+	content: "";
+	position: absolute;
+	right: -20px;
+	top: 65px;
+	width: 10px;
+	height: 15px;
+	border-radius: 5px;
+	background-color: rgb(36, 36, 36);
+}
+.car-bottom__door_f::after {
+	content: "";
+	border: 1px solid #000;
+	border-radius: 2.5px;
+	width: 20px;
+	height: 5px;
+	position: absolute;
+	top: 100px;
+	left: 5px;
+	background: linear-gradient(
+		135deg,
+		rgba(124, 2, 31, 1) 0%,
+		rgba(169, 3, 41, 1) 14%,
+		rgba(105, 1, 26, 1) 31%,
+		rgba(105, 1, 26, 1) 40%,
+		rgba(169, 3, 41, 1) 51%,
+		rgba(124, 2, 31, 1) 62%,
+		rgba(124, 2, 31, 1) 71%,
+		rgba(169, 3, 41, 1) 82%,
+		rgba(124, 2, 31, 1) 90%,
+		rgba(80, 0, 19, 1) 100%
+	);
+}
+.car-bottom__door_f-gl {
+	border: 1px solid #000;
+	border-radius: 5px 5px 0 0;
+	width: 110px;
+	height: 70px;
+	position: absolute;
+	left: 1.5px;
+	top: 2px;
+	background: linear-gradient(
+		135deg,
+		rgba(30, 87, 153, 1) 0%,
+		rgba(41, 137, 216, 1) 18%,
+		rgba(41, 137, 216, 1) 37%,
+		rgba(41, 137, 216, 1) 47%,
+		rgba(41, 137, 216, 1) 52%,
+		rgba(41, 137, 216, 1) 61%,
+		rgba(32, 124, 202, 1) 86%,
+		rgba(125, 185, 232, 1) 100%
+	);
+}
+.car-bottom__door_l {
+	border: 1px solid #000;
+	border-radius: 5px 5px 5px 5px;
+
+	width: 115px;
+	height: 210px;
+	position: absolute;
+	left: 160px;
+	top: -75px;
+	background: linear-gradient(
+		135deg,
+		rgba(240, 183, 161, 1) 0%,
+		rgba(117, 34, 1, 1) 46%,
+		rgba(117, 34, 1, 1) 57%,
+		rgba(191, 110, 78, 1) 100%
+	);
+}
+.car-bottom__door_l::after {
+	content: "";
+	border: 1px solid #000;
+	border-radius: 2.5px;
+	width: 20px;
+	height: 5px;
+	position: absolute;
+	top: 100px;
+	left: 5px;
+	background: linear-gradient(
+		135deg,
+		rgba(124, 2, 31, 1) 0%,
+		rgba(169, 3, 41, 1) 14%,
+		rgba(105, 1, 26, 1) 31%,
+		rgba(105, 1, 26, 1) 40%,
+		rgba(169, 3, 41, 1) 51%,
+		rgba(124, 2, 31, 1) 62%,
+		rgba(124, 2, 31, 1) 71%,
+		rgba(169, 3, 41, 1) 82%,
+		rgba(124, 2, 31, 1) 90%,
+		rgba(80, 0, 19, 1) 100%
+	);
+}
+.car-bottom__door_l-gl {
+	border: 1px solid #000;
+	border-radius: 5px 5px 0 0;
+	width: 110px;
+	height: 70px;
+	position: absolute;
+	left: 1.5px;
+	top: 2px;
+	background: linear-gradient(
+		135deg,
+		rgba(30, 87, 153, 1) 0%,
+		rgba(41, 137, 216, 1) 18%,
+		rgba(41, 137, 216, 1) 37%,
+		rgba(41, 137, 216, 1) 47%,
+		rgba(41, 137, 216, 1) 52%,
+		rgba(41, 137, 216, 1) 61%,
+		rgba(32, 124, 202, 1) 86%,
+		rgba(125, 185, 232, 1) 100%
+	);
+}
+.car-bottom__headlight {
+	border: 1px solid rgb(122, 119, 119);
+	border-radius: 20px 300px 20px 20px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background: linear-gradient(
+		135deg,
+		rgba(79, 17, 24, 1) 14%,
+		rgba(137, 30, 32, 1) 26%,
+		rgba(206, 45, 53, 1) 48%,
+		rgba(241, 225, 53, 1) 90%,
+		rgba(241, 225, 53, 1) 99%
+	);
+}
+.car-bottom__backlight {
+	border: 1px solid #000;
+	border-radius: 10px 5px 5px 10px;
+	width: 10px;
+	height: 40px;
+	position: absolute;
+	top: 15px;
+	left: -5px;
+	background: linear-gradient(
+		45deg,
+		rgba(255, 183, 107, 1) 0%,
+		rgba(255, 167, 61, 1) 24%,
+		rgba(255, 124, 0, 1) 39%,
+		rgba(224, 63, 4, 1) 72%
+	);
+}
+.car-bottom__wheel_f {
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 65%;
+	right: 60px;
+	z-index: 45;
+	background: radial-gradient(
+		ellipse at center,
+		rgba(169, 3, 41, 1) 0%,
+		rgba(143, 2, 34, 1) 44%,
+		rgba(169, 3, 41, 1) 72%,
+		rgba(109, 0, 25, 1) 100%
+	);
+}
+.car-bottom__wheel_f::after {
+	content: "";
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 8%;
+	left: 8%;
+	background: radial-gradient(
+		ellipse at center,
+		rgb(140, 140, 140) 0%,
+		rgba(140, 140, 140, 0.63) 3%,
+		rgba(211, 211, 211, 0.822) 17%,
+		rgba(211, 211, 211, 0.36) 5%,
+		rgba(0, 0, 0, 0.849) 22%,
+		rgba(178, 178, 178, 0.959) 100%
+	);
+}
+.car-bottom__wheel_l {
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 65%;
+	left: 20px;
+	z-index: 5;
+	background: radial-gradient(
+		ellipse at center,
+		rgba(169, 3, 41, 1) 0%,
+		rgba(143, 2, 34, 1) 44%,
+		rgba(169, 3, 41, 1) 72%,
+		rgba(109, 0, 25, 1) 100%
+	);
+}
+.car-bottom__wheel_l::after {
+	content: "";
+	border: 1px solid #000;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 8%;
+	left: 8%;
+	background: radial-gradient(
+		ellipse at center,
+		rgb(140, 140, 140) 0%,
+		rgba(140, 140, 140, 0.63) 3%,
+		rgba(211, 211, 211, 0.822) 17%,
+		rgba(211, 211, 211, 0.36) 5%,
+		rgba(0, 0, 0, 0.849) 22%,
+		rgba(178, 178, 178, 0.959) 100%
+	);
+}
+.floor {
+	background: rgba(122, 120, 120, 0.794);
+	height: 100px;
+}
